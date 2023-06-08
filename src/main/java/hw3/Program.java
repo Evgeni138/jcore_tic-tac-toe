@@ -56,6 +56,11 @@ public class Program {
         workers1 = arrayWorkers.addWorker((new Handyman("Tom", 20, 5)), workers1);
         workers1 = arrayWorkers.addWorker((new Engineer("John", 33, 1000)), workers1);
 
+        Arrays.sort(workers1, comparatorSort);
+        for (Worker worker: workers1
+             ) {
+            System.out.println(worker);
+        }
         arrayWorkers.printArray(workers1);
         System.out.println();
 
